@@ -3,7 +3,6 @@ package ru.netology.stats;
 public class StatsService {
 
     public int sum(int[] sales) {
-        //public int ( int i = 0, i < 12, i ++ )
         int sum = 0;
         for (int sale : sales) {
             sum += sale;
@@ -13,10 +12,11 @@ public class StatsService {
     }
 
     public int average(int[] sales) {
-        int sum = 0;
+        int sum = sum(sales);
+        //int sum = 0;
         int q = 0;
         for (int sale : sales) {
-            sum += sale;
+            // sum += sale;
             q = q + 1;
         }
         System.out.println("Средняя сумма продаж за месяц:" + sum / q);
@@ -52,10 +52,11 @@ public class StatsService {
     }
 
     public int lessaveragesale(int[] sales) {
-        int sum = 0;
+        int sum = sum(sales);
+//        int sum = 0;
         int q = 0;
         for (int sale : sales) {
-            sum += sale;
+            //  sum += sale;
             q = q + 1;
         }
         sum = sum / q;
@@ -70,10 +71,11 @@ public class StatsService {
     }
 
     public int aboveaveragesale(int[] sales) {
-        int sum = 0;
+        int sum = sum(sales);
+        // int sum = 0;
         int q = 0;
         for (int sale : sales) {
-            sum += sale;
+            //  sum += sale;
             q = q + 1;
         }
         sum = sum / q;
