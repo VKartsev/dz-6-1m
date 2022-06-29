@@ -11,7 +11,7 @@ public class StatsService {
         return sum;
     }
 
-    public int average(int[] sales) {
+    public int averageSalesAmount(int[] sales) {
         int sum = sum(sales);
         //int sum = 0;
         int q = 0;
@@ -23,7 +23,7 @@ public class StatsService {
         return sum / q;
     }
 
-    public int topsale(int[] sales) {
+    public int topSale(int[] sales) {
         int maxMonth = 0;
         int month = 0;
         for (int sale : sales) {
@@ -37,7 +37,7 @@ public class StatsService {
         return maxMonth;
     }
 
-    public int minsale(int[] sales) {
+    public int minSale(int[] sales) {
         int minMonth = 0;
         int month = 0;
         for (int sale : sales) {
@@ -51,7 +51,7 @@ public class StatsService {
         return minMonth;
     }
 
-    public int lessaveragesale(int[] sales) {
+    public int lessAverageSale(int[] sales) {
         int sum = sum(sales);
 //        int sum = 0;
         int q = 0;
@@ -70,7 +70,7 @@ public class StatsService {
         return q;
     }
 
-    public int aboveaveragesale(int[] sales) {
+    public int aboveAverageSale(int[] sales) {
         int sum = sum(sales);
         // int sum = 0;
         int q = 0;

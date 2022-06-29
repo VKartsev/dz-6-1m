@@ -21,7 +21,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int actual = service.average(sales);
+        int actual = service.averageSalesAmount(sales);
         int expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
 
         Assertions.assertEquals(expected, actual);
@@ -32,7 +32,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int actual = service.topsale(sales);
+        int actual = service.topSale(sales);
         int expected = 8;
 
         Assertions.assertEquals(expected, actual);
@@ -43,7 +43,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int actual = service.minsale(sales);
+        int actual = service.minSale(sales);
         int expected = 9;
 
         Assertions.assertEquals(expected, actual);
@@ -54,7 +54,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int actual = service.lessaveragesale(sales);
+        int actual = service.lessAverageSale(sales);
         int expected = 5;
 
         Assertions.assertEquals(expected, actual);
@@ -65,7 +65,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int actual = service.aboveaveragesale(sales);
+        int actual = service.aboveAverageSale(sales);
         int expected = 5;
 
         Assertions.assertEquals(expected, actual);
