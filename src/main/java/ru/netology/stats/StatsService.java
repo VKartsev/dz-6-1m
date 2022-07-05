@@ -1,5 +1,9 @@
 package ru.netology.stats;
 
+//import static com.sun.tools.doclint.Entity.sum;
+
+//import org.jetbrains.annotations.;
+
 public class StatsService {
 
     public int sum(int[] sales) {
@@ -50,17 +54,10 @@ public class StatsService {
         System.out.println("Номер месяца, в котором был минимум продаж:" + minMonth);
         return minMonth;
     }
-
     public int lessAverageSale(int[] sales) {
-        int sum = sum(sales);
-//        int sum = 0;
+
+        int sum = averageSalesAmount(sales);
         int q = 0;
-        for (int sale : sales) {
-            //  sum += sale;
-            q = q + 1;
-        }
-        sum = sum / q;
-        q = 0;
         for (int sale : sales) {
             if (sum < sale) {
                 q = q + 1;
@@ -71,15 +68,8 @@ public class StatsService {
     }
 
     public int aboveAverageSale(int[] sales) {
-        int sum = sum(sales);
-        // int sum = 0;
+        int sum = averageSalesAmount(sales);
         int q = 0;
-        for (int sale : sales) {
-            //  sum += sale;
-            q = q + 1;
-        }
-        sum = sum / q;
-        q = 0;
         for (int sale : sales) {
             if (sum > sale) {
                 q = q + 1;
@@ -90,7 +80,5 @@ public class StatsService {
     }
 
 }
-
-
 
 
