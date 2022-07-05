@@ -1,9 +1,5 @@
 package ru.netology.stats;
 
-//import static com.sun.tools.doclint.Entity.sum;
-
-//import org.jetbrains.annotations.;
-
 public class StatsService {
 
     public int sum(int[] sales) {
@@ -17,11 +13,9 @@ public class StatsService {
 
     public int averageSalesAmount(int[] sales) {
         int sum = sum(sales);
-        //int sum = 0;
         int q = 0;
         for (int sale : sales) {
-            // sum += sale;
-            q = q + 1;
+          q = q + 1;
         }
         System.out.println("Средняя сумма продаж за месяц:" + sum / q);
         return sum / q;

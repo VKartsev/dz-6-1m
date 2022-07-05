@@ -59,7 +59,6 @@ public class StatsServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
     @Test
     public void AboveAverageMonthlySale() {
         StatsService service = new StatsService();
